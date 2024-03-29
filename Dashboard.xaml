@@ -1,0 +1,84 @@
+﻿<Window x:Class="Study_Planner.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Study_Planner"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="700" Width="1310">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Navigation Menu -->
+        <Menu Grid.Row="0">
+            <!-- Add MenuItems for navigation -->
+        </Menu>
+        
+        <!-- Navigation Bar -->
+        <TabControl VerticalAlignment="Top">
+            <TabItem Header="Study Plans" MouseUp="OpenStudyPlansPage">
+                <!-- Add controls for Study Plans feature -->
+            </TabItem>
+            <TabItem Header="Tasks" MouseUp="OpenTasksPage">
+                <!-- Add controls for Task Management feature -->
+            </TabItem>
+            <TabItem Header="Calendar Integration" MouseUp="OpenCalenderPage">
+                <!-- Add controls for Calendar Integration feature -->
+            </TabItem>
+            <TabItem Header="Progress Tracking" MouseUp="OpenProgress_Tracking">
+                <!-- Add controls for Progress Tracking feature -->
+            </TabItem>
+            <TabItem Header="Resource Management" MouseUp="OpenResource_Management">
+                <!-- Add controls for Resource Management feature -->
+            </TabItem>
+            <TabItem Header="Note-taking" MouseUp="OpenNote_Taking">
+                <!-- Add controls for Note-taking feature -->
+            </TabItem>
+            <TabItem Header="Goal Setting" MouseUp="OpenGoal_Setting">
+                <!-- Add controls for Goal Setting feature -->
+            </TabItem>
+            <TabItem Header="Customization Options" MouseUp="OpenCustomization_Options">
+                <!-- Add controls for Customization Options feature -->
+            </TabItem>
+            <TabItem Header="Syncing and Backup" MouseUp="OpenSyncing_and_Backup">
+                <!-- Add controls for Syncing and Backup feature -->
+            </TabItem>
+            <TabItem Header="Reports and Analytics" MouseUp="OpenReports_and_Analytics">
+                <!-- Add controls for Reports and Analytics feature -->
+            </TabItem>
+            <TabItem Header="Collaboration" MouseUp="OpenCollaboration">
+                <!-- Add controls for Collaboration feature -->
+            </TabItem>
+            <TabItem Header="Offline Access" MouseUp="OpenOffline_Access">
+                <!-- Add controls for Offline Access feature -->
+            </TabItem>
+            <TabItem Header="Accessibility" MouseUp="OpenAccessibility">
+                <!-- Add controls for Accessibility feature -->
+            </TabItem>
+            <TabItem Header="Licenses">
+                <StackPanel>
+                    <Button Content="License Management" Click="OpenLicense_Management"/>
+                    <Button Content="Contact US" Click="OpenContact_Us"/>
+                    <Button Content="Help" Click="OpenHelp"/>
+                    <Button Content="Software Updates" Click="OpenSoftware_Updates"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        
+        <!-- Add elements to display study plans, tasks, and progress -->
+        <!-- <TextBlock Text="Study Plans" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <ListBox x:Name="studyPlansListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" Width="200" Height="300"/>
+
+        <TextBlock Text="Tasks" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,10,0,0"/>
+        <ListBox x:Name="tasksListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,30,0,0" Width="300" Height="300"/>
+
+        <TextBlock Text="Progress" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,350,0,0"/>
+         Add charts or graphs to visualize progress -->
+
+        <!-- Frame to host feature content -->
+        <Frame x:Name="featureFrame" Grid.Row="1"/>
+    </Grid>
+</Window>
